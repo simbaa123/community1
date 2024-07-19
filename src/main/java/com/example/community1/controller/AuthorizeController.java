@@ -55,7 +55,6 @@ public class AuthorizeController {
 //            System.out.println(users.getGmtCreate());
             userMapper.insert(users);
             request.getSession().setAttribute("user",githubUser);//成功登录
-            userMapper.insert(users);
             return "redirect:/";
         }else{
             return "redirect:/";
