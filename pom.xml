@@ -8,7 +8,7 @@
         <version>2.1.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>life.majiang.community</groupId>
+    <groupId>com.example.community1</groupId>
     <artifactId>community</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>community</name>
@@ -29,15 +29,15 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
-        <profile>
-            <id>mysql</id>
-            <properties>
-                <db.url>jdbc:mysql://127.0.0.1:3306/</db.url>
-                <db.user>root</db.user>
-                <db.password>root</db.password>
-                <db.driver>com.mysql.cj.jdbc.Driver</db.driver>
-            </properties>
-        </profile>
+<!--        <profile>-->
+<!--            <id>mysql</id>-->
+<!--            <properties>-->
+<!--                <db.url>jdbc:mysql://127.0.0.1:3306/</db.url>-->
+<!--                <db.user>root</db.user>-->
+<!--                <db.password>root</db.password>-->
+<!--                <db.driver>com.mysql.cj.jdbc.Driver</db.driver>-->
+<!--            </properties>-->
+<!--        </profile>-->
     </profiles>
 
     <dependencies>
@@ -85,10 +85,11 @@
             <version>23.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.199</version>
+            <version>2.2.220</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -115,6 +116,18 @@
             <groupId>cn.ucloud.ufile</groupId>
             <artifactId>ufile-client-java</artifactId>
             <version>2.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
